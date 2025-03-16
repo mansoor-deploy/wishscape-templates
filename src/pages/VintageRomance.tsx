@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
-import CountdownTimer from '@/components/CountdownTimer';
-import LoveStoryTimeline from '@/components/LoveStoryTimeline';
-import PhotoGallery from '@/components/PhotoGallery';
-import HeartIcon from '@/components/HeartIcon';
+import HeroSection from '@/components/vintage/HeroSection';
+import GallerySection from '@/components/vintage/GallerySection';
+import StorySection from '@/components/vintage/StorySection';
+import NoteSection from '@/components/vintage/NoteSection';
+import Footer from '@/components/vintage/Footer';
 
 interface VintageRomanceProps {
   couple?: {
@@ -75,125 +75,11 @@ const VintageRomance: React.FC<VintageRomanceProps> = ({
 }) => {
   return (
     <Layout songUrl={songUrl} videoUrl={videoUrl} theme="vintage" couple={{ name1: couple.name1, name2: couple.name2 }}>
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center relative px-4 py-16 bg-vintage-paper film-grain">
-        <div className="absolute inset-0 bg-gradient-to-b from-vintage-sepia/10 to-transparent z-[-1]"></div>
-        
-        <HeartIcon className="text-vintage-gold mb-6 w-12 h-12" />
-        
-        <motion.div
-          className="flex flex-col items-center text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-        >
-          <h1 className="font-handwritten text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-vintage-sepia leading-tight">
-            {couple.name1} & {couple.name2}
-          </h1>
-          
-          <div className="w-24 h-px bg-vintage-gold mb-6"></div>
-          
-          <p className="max-w-md text-lg md:text-xl text-vintage-sepia mb-8 font-handwritten">
-            {couple.message}
-          </p>
-          
-          <motion.div
-            className="w-full max-w-md"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-          >
-            <CountdownTimer 
-              targetDate={couple.anniversaryDate} 
-              theme="vintage"
-            />
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Gallery Section - Polaroid Style */}
-      <section className="py-20 px-4 relative bg-vintage-cream">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <span className="text-xs uppercase tracking-widest text-vintage-sepia font-medium">Memories</span>
-            <h2 className="font-handwritten text-4xl md:text-5xl mt-2 mb-4 text-vintage-sepia">Our Gallery</h2>
-            <div className="w-16 h-px bg-vintage-gold mx-auto"></div>
-          </motion.div>
-          
-          <PhotoGallery photos={gallery} theme="vintage" style="polaroid" />
-        </div>
-      </section>
-
-      {/* Our Story Section */}
-      <section className="py-20 px-4 relative bg-vintage-paper">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <span className="text-xs uppercase tracking-widest text-vintage-sepia font-medium">Timeline</span>
-            <h2 className="font-handwritten text-4xl md:text-5xl mt-2 mb-4 text-vintage-sepia">Our Love Story</h2>
-            <div className="w-16 h-px bg-vintage-gold mx-auto"></div>
-          </motion.div>
-          
-          <LoveStoryTimeline events={timeline} theme="vintage" />
-        </div>
-      </section>
-
-      {/* RSVP Section - Styled as a Letter */}
-      <section className="py-20 px-4 relative bg-vintage-cream">
-        <div className="max-w-2xl mx-auto">
-          <motion.div
-            className="bg-white p-8 md:p-12 shadow-md rotate-[-1deg] film-grain"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <div className="text-center">
-              <span className="text-xs uppercase tracking-widest text-vintage-sepia font-medium">With Love</span>
-              <h2 className="font-handwritten text-4xl mt-2 mb-4 text-vintage-sepia">A Note To You</h2>
-              <div className="w-16 h-px bg-vintage-gold mx-auto mb-6"></div>
-            </div>
-            
-            <p className="font-handwritten text-xl text-vintage-sepia mb-6 leading-relaxed">
-              Dearest,
-            </p>
-            
-            <p className="font-handwritten text-xl text-vintage-sepia mb-6 leading-relaxed">
-              As we celebrate another year of our journey together, I am reminded of all the beautiful moments we've shared. Your love has been my greatest adventure, and I cherish every memory we've created side by side.
-            </p>
-            
-            <p className="font-handwritten text-xl text-vintage-sepia mb-6 leading-relaxed">
-              Thank you for being my partner, my confidant, and my best friend. Here's to many more years of love and laughter.
-            </p>
-            
-            <p className="font-handwritten text-xl text-vintage-sepia mb-6 leading-relaxed text-right">
-              Forever yours,
-            </p>
-            
-            <p className="font-handwritten text-2xl text-vintage-sepia text-right">
-              {couple.name1}
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-8 px-4 text-center border-t border-vintage-gold/20 bg-vintage-paper">
-        <p className="text-xs text-vintage-sepia font-medium">
-          With Love | {couple.name1} & {couple.name2} | {new Date().getFullYear()}
-        </p>
-      </footer>
+      <HeroSection couple={couple} />
+      <GallerySection gallery={gallery} />
+      <StorySection timeline={timeline} />
+      <NoteSection fromName={couple.name1} />
+      <Footer name1={couple.name1} name2={couple.name2} />
     </Layout>
   );
 };
