@@ -12,10 +12,10 @@ const StarryNight = () => {
   targetDate.setMonth(targetDate.getMonth() + 1);
   
   const photos = [
-    { url: 'https://images.unsplash.com/photo-1522673607200-164d1b39ce09', alt: 'Couple stargazing' },
-    { url: 'https://images.unsplash.com/photo-1499936890811-41b2a27a0f0b', alt: 'Couple under stars' },
-    { url: 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3', alt: 'Night sky' },
-    { url: 'https://images.unsplash.com/photo-1475274047050-1d0c0975c63e', alt: 'Milky way' },
+    { src: 'https://images.unsplash.com/photo-1522673607200-164d1b39ce09', caption: 'Couple stargazing' },
+    { src: 'https://images.unsplash.com/photo-1499936890811-41b2a27a0f0b', caption: 'Couple under stars' },
+    { src: 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3', caption: 'Night sky' },
+    { src: 'https://images.unsplash.com/photo-1475274047050-1d0c0975c63e', caption: 'Milky way' },
   ];
 
   const timelineEvents = [
@@ -99,8 +99,8 @@ const StarryNight = () => {
           
           <PhotoGallery 
             photos={photos} 
-            effect="constellation" 
-            className="bg-starry-blue/30 backdrop-blur-md rounded-lg p-6"
+            theme="starry"
+            style="grid"
           />
         </div>
       </section>

@@ -14,10 +14,10 @@ const GoldenBond = () => {
   const [activeSection, setActiveSection] = useState('intro');
   
   const photos = [
-    { url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed', alt: 'Elegant couple' },
-    { url: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a', alt: 'Wedding rings' },
-    { url: 'https://images.unsplash.com/photo-1522673607200-164d1b39ce09', alt: 'Couple' },
-    { url: 'https://images.unsplash.com/photo-1529634506289-7df250d9f838', alt: 'Celebration' },
+    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed', caption: 'Elegant couple' },
+    { src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a', caption: 'Wedding rings' },
+    { src: 'https://images.unsplash.com/photo-1522673607200-164d1b39ce09', caption: 'Couple' },
+    { src: 'https://images.unsplash.com/photo-1529634506289-7df250d9f838', caption: 'Celebration' },
   ];
 
   const timelineEvents = [
@@ -141,8 +141,8 @@ const GoldenBond = () => {
           
           <PhotoGallery 
             photos={photos} 
-            effect="elegant" 
-            className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-lg"
+            theme="golden"
+            style="grid" 
           />
         </div>
       </section>
