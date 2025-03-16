@@ -66,7 +66,7 @@ const StarryNight = () => {
               Stella <span className="text-starry-silver">&</span> Leo
             </h1>
             <p className="text-starry-silver text-xl md:text-2xl mb-8">
-              Celebrating Our Cosmic Connection
+              To My Shining Star
             </p>
             
             <div className="mb-10">
@@ -74,8 +74,8 @@ const StarryNight = () => {
             </div>
             
             <p className="text-starry-silver text-lg max-w-2xl mx-auto">
-              Our love story is written in the stars. Join us as we celebrate another year of 
-              cosmic adventures together under the vast night sky.
+              My love, our story is written in the stars. Every day with you feels like a cosmic adventure.
+              I created this for you, to celebrate another year of us exploring the universe together.
             </p>
           </motion.div>
         </div>
@@ -93,7 +93,7 @@ const StarryNight = () => {
           >
             <h2 className="text-4xl font-elegant text-white mb-6">Our Stellar Moments</h2>
             <p className="text-starry-silver max-w-2xl mx-auto">
-              Memories that shine as bright as the stars above.
+              Remember these moments? They shine as bright as the stars above.
             </p>
           </motion.div>
           
@@ -117,7 +117,7 @@ const StarryNight = () => {
           >
             <h2 className="text-4xl font-elegant text-white mb-6">Written in the Stars</h2>
             <p className="text-starry-silver max-w-2xl mx-auto">
-              The celestial journey of our love.
+              The celestial journey of our love, each moment precious to me.
             </p>
           </motion.div>
           
@@ -136,17 +136,17 @@ const StarryNight = () => {
             className="glass-panel p-10"
           >
             <blockquote className="font-handwritten text-2xl md:text-3xl text-white italic mb-6">
-              "For my part I know nothing with any certainty, but the sight of the stars makes me dream."
+              "For my part I know nothing with any certainty, but the sight of the stars makes me dream of you."
             </blockquote>
-            <cite className="text-starry-silver">— Vincent Van Gogh</cite>
+            <cite className="text-starry-silver">With all my love, Leo</cite>
           </motion.div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="relative py-10 px-4 text-center text-starry-silver">
-        <p>With love, Stella & Leo</p>
-        <p className="text-sm mt-2">Under the same stars, forever.</p>
+        <p>All my love, Leo</p>
+        <p className="text-sm mt-2">Under the same stars with you, forever.</p>
       </footer>
     </Layout>
   );

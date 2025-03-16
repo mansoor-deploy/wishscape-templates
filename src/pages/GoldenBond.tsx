@@ -107,7 +107,7 @@ const GoldenBond = () => {
             </h1>
             <GoldenDivider className="mx-auto my-6" />
             <p className="text-golden-emerald text-xl md:text-2xl mb-8 font-serif">
-              Celebrating Our Golden Anniversary
+              My Treasured One
             </p>
             
             <div className="mb-10">
@@ -115,8 +115,8 @@ const GoldenBond = () => {
             </div>
             
             <p className="text-golden-emerald text-lg max-w-2xl mx-auto font-serif">
-              With joy and gratitude, we celebrate another year of love, laughter, and 
-              cherished memories together. Our bond grows stronger with each passing day.
+              My darling, with joy and gratitude, I celebrate another year of our love story. 
+              You are the gold in my life, and each moment with you is a precious treasure.
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ const GoldenBond = () => {
             <h2 className="text-4xl font-elegant text-golden-emerald mb-6">Treasured Moments</h2>
             <GoldenDivider className="mx-auto my-4" />
             <p className="text-golden-emerald/80 max-w-2xl mx-auto font-serif">
-              Golden memories that have shaped our journey together.
+              The golden memories that remind me how lucky I am to have you.
             </p>
           </motion.div>
           
@@ -160,7 +160,7 @@ const GoldenBond = () => {
             <h2 className="text-4xl font-elegant text-golden-emerald mb-6">Our Journey Together</h2>
             <GoldenDivider className="mx-auto my-4" />
             <p className="text-golden-emerald/80 max-w-2xl mx-auto font-serif">
-              The beautiful chapters of our love story.
+              Every chapter of our love story is etched in my heart.
             </p>
           </motion.div>
           
@@ -178,24 +178,24 @@ const GoldenBond = () => {
             viewport={{ once: true }}
             className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-10 border border-golden-gold/20"
           >
-            <h2 className="text-3xl font-elegant text-golden-emerald mb-6">A Message From Us</h2>
+            <h2 className="text-3xl font-elegant text-golden-emerald mb-6">My Heart to Yours</h2>
             <GoldenDivider className="mx-auto my-4" />
             <p className="text-golden-emerald font-serif text-lg mb-6">
-              Dear friends and family,
+              My dearest Elizabeth,
             </p>
             <p className="text-golden-emerald/90 font-serif mb-4">
-              As we celebrate another year of marriage, we want to express our deepest gratitude 
-              for your love and support throughout our journey. Each moment shared with you has 
-              enriched our lives and strengthened our bond.
+              As we celebrate another year together, I want you to know that you are the treasure 
+              of my life. Your love has been my strength and your smile my daily sunshine. 
+              Each moment with you is golden, each memory a precious gem I hold close.
             </p>
             <p className="text-golden-emerald/90 font-serif">
-              Your presence in our lives is the true golden treasure we cherish.
+              You are and always will be the most important person in my life.
             </p>
             <p className="font-handwritten text-2xl text-golden-emerald mt-8">
-              With all our love,
+              Forever yours,
             </p>
             <p className="font-handwritten text-2xl gold-text mt-2">
-              Elizabeth & James
+              James
             </p>
           </motion.div>
         </div>
@@ -203,8 +203,8 @@ const GoldenBond = () => {
 
       {/* Footer */}
       <footer className="relative py-10 px-4 text-center text-golden-emerald">
-        <p className="font-serif">With love and gratitude,</p>
-        <p className="font-handwritten text-xl mt-2 gold-text">Elizabeth & James</p>
+        <p className="font-serif">With all my love and devotion,</p>
+        <p className="font-handwritten text-xl mt-2 gold-text">James</p>
       </footer>
     </Layout>
   );
